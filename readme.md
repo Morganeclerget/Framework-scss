@@ -1,18 +1,38 @@
 **Bienvenue sur mon Framework !** 
 
-Celui-ci propose 6 types de classes différentes :
+*Celui-ci propose 6 types de classes différentes :*
+
 1. Système de colonnes pour le placement des éléments
+2. Gestion des margins
+3. Gestion des paddings
+4. Gestion de la justification du contenu 
+5. Gestion de l'alignement du contenu
+6. Gestion du responsive
 
 
-**Page divisée en 12 colonnes :**
+**1. Système de colonnes pour le placement des éléments**
 
-.col-i -> Permet de définir la taille des éléments 
+La page est divisée en 12 colonnes : 
 
-1 < i < 12
+On a donc une variable i qui définit le nombre de colonnes de 1 à 12 que doit prendre un élément.
+La classe associée s'écrit de cette manière : 
 
+      .col-i
+      
 _____
 
+
+
 **Gérer les margins :**
+
+Le framework permet de gérer les margins jusqu'à 4 niveaux différents. 
+
+Ce nombre de niveaux peut être 
+
+      $nbSpacing : 4;
+
+
+
 
 Formation : **m{x}-{1/2/3/4}**
 
