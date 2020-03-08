@@ -1,0 +1,183 @@
+$primaryColor: white;
+
+body {
+    background-color: $primaryColor;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+article { 
+    border: 1px solid black;
+    background: #ddd;
+}
+
+$nbColumns : 12;
+$nbSpacing : 4;
+$margin : 20px;
+$padding : 20px;
+
+.columns {
+    overflow: hidden;
+    > div {
+        margin-right: - $margin;
+        display: flex;
+        flex-wrap: wrap;
+        > *{
+            flex-grow : 1;
+            margin-bottom: $margin;
+            margin-right: $margin;
+        } 
+        
+    }
+}
+
+// Définit 12 classes de colonnes différentes
+
+@for $i from 1 through $nbColumns {
+    .col-#{$i} {
+        flex-basis: calc(100% / #{$nbColumns} * #{$i} - #{$margin});
+    }
+}
+
+// Gérer les margin 
+
+@for $i from 0 through $nbSpacing {
+    .m-#{$i} {
+        margin : calc(#{$margin}*#{$i});
+    }
+
+    .mt-#{$i} {
+        margin-top : calc(#{$margin}*#{$i});
+    }
+
+    .mr-#{$i} {
+        margin-right : calc(#{$margin}*#{$i});
+    }
+
+    .mb-#{$i} {
+        margin-bottom : calc(#{$margin}*#{$i});
+    }
+
+    .ml-#{$i} {
+        margin-left : calc(#{$margin}*#{$i});
+    }
+
+}
+
+.mauto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Gérer les padding 
+
+@for $i from 0 through $nbSpacing {
+    .p-#{$i} {
+        padding : calc(#{$padding}*#{$i});
+    }
+
+    .pt-#{$i} {
+        padding-top : calc(#{$padding}*#{$i});
+    }
+
+    .pr-#{$i} {
+        padding-right : calc(#{$padding}*#{$i});
+    }
+
+    .pb-#{$i} {
+        padding-bottom : calc(#{$padding}*#{$i});
+    }
+
+    .pl-#{$i} {
+        padding-left : calc(#{$padding}*#{$i});
+    }
+}
+
+
+// Gérer la justification du contenu 
+
+.ctc {
+    display: flex;
+    justify-content: center;
+}
+
+.ctr {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+// Gérer l'alignement du contenu 
+
+    // aligner à la fin
+.al-end {
+    display: flex;
+    align-items: flex-end;
+}
+
+    // aligner au centre 
+.al-center {
+    display: flex;
+    align-items: center;
+}
+
+    // étirer sur toute la largeur/hauteur
+.al-stretch {
+    display: flex;
+    align-items: stretch;
+}
+
+    // aligner sur le contenu 
+.al-content {
+    display: flex;
+    align-items: baseline;
+}
+
+
+// Créer des classes avec le suffix "lg" -> Va servir pour la version desktop.
+
+@media (max-width: 1080px) {
+    body {
+        background-color: pink;
+    }
+    @for $i from 1 through $nbColumns {
+        .col-lg-#{$i} {
+            flex-basis: calc(100% / #{$nbColumns} * #{$i} - #{$margin});
+        }
+    }
+}
+
+
+// Créer des classes avec le suffix "md" -> Va servir pour la version tablette.
+
+@media (max-width: 970px) {
+    body {
+        background-color: red;
+    }
+    @for $i from 1 through $nbColumns {
+        .col-md-#{$i} {
+            flex-basis: calc(100% / #{$nbColumns} * #{$i} - #{$margin});
+        }
+    }
+}
+
+
+// Créer des classes avec le suffix "sm" -> Va servir pour la version mobile.
+
+@media (max-width: 580px) {
+    @for $i from 1 through $nbColumns {
+        body {
+            background-color: blue;
+        }
+        .col-sm-#{$i} {
+            flex-basis: calc(100% / #{$nbColumns} * #{$i} - #{$margin});
+        }
+    }
+}
+
+
+
+
