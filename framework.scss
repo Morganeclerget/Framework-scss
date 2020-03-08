@@ -1,4 +1,10 @@
+// Variables :
+
 $primaryColor: white;
+$nbColumns : 12;
+$nbSpacing : 4;
+$margin : 20px;
+$padding : 20px;
 
 body {
     background-color: $primaryColor;
@@ -13,10 +19,6 @@ article {
     background: #ddd;
 }
 
-$nbColumns : 12;
-$nbSpacing : 4;
-$margin : 20px;
-$padding : 20px;
 
 .columns {
     overflow: hidden;
@@ -41,7 +43,7 @@ $padding : 20px;
     }
 }
 
-// Gérer les margin 
+// Gérer les margins 
 
 @for $i from 0 through $nbSpacing {
     .m-#{$i} {
@@ -72,7 +74,7 @@ $padding : 20px;
     justify-content: center;
 }
 
-// Gérer les padding 
+// Gérer les paddings 
 
 @for $i from 0 through $nbSpacing {
     .p-#{$i} {
@@ -97,17 +99,46 @@ $padding : 20px;
 }
 
 
+
+
 // Gérer la justification du contenu 
 
-.ctc {
+    // centrer le contenu
+.content-center{
     display: flex;
     justify-content: center;
 }
 
-.ctr {
+    // Justifié le contenu au début du bloc
+.content-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+    // Justifié le contenu à la fin du bloc
+.content-end { 
     display: flex;
     justify-content: flex-end;
 }
+
+    // Le contenu s'espace proportionnellement entre le début et la fin du bloc
+.content-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+    // Le contenu s'espace de manière égale entre les bords du contenu et de manière proportionnelle pour le contenu
+.content-around {
+    display: flex;
+    justify-content: space-around;
+}  
+
+    // Le contenu s'espace de manière égale entre les bords du contenu et le contenu lui-même
+.content-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}  
+
 
 
 // Gérer l'alignement du contenu 
@@ -135,6 +166,8 @@ $padding : 20px;
     display: flex;
     align-items: baseline;
 }
+
+
 
 
 // Créer des classes avec le suffix "lg" -> Va servir pour la version desktop.
