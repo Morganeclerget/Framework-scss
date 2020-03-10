@@ -23,7 +23,7 @@ _____
 
 
 
-## 2. Gérer les margins :
+## 2. Gestion des margins :
 
 Le framework permet de gérer les margins en se basant sur une variable "$margin" :
 
@@ -55,7 +55,7 @@ mauto  : margin-auto (centrer le contenu dans un bloc)
 
 _____
 
-## 3. Gérer les paddings :
+## 3. Gestion des paddings :
 
 Les paddings se gèrent de la même manière que les margins (CF "2. Gérer les margins").
 
@@ -88,7 +88,7 @@ x-  :
 
 _____
 
-## 4. Gérer la justification du contenu**
+## 4. Gestion de la justification du contenu**
 
 - content-center : Centrer le contenu
 
@@ -105,7 +105,7 @@ _____
 _____
 
 
-## 5. Gérer l'alignement du contenu**
+## 5. Gestion de l'alignement du contenu**
 
 - al-end : aligner à la fin
 
@@ -117,7 +117,7 @@ _____
 
 _____
 
-## 6. Gérer le responsive**
+## 6. Gestion du responsive**
 
 - col-lg-i : Utilisé pour la version "desktop"
 
