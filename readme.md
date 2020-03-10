@@ -130,5 +130,7 @@ _____
 
 La variable "i" étant toujours la variable qui définit le nombre de colonnes de 1 à 12 que doit prendre un élément.
 
-### Thanks to reading me ! 
+
+
+### Thanks for reading me ! 👍
 
