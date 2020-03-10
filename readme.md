@@ -91,7 +91,7 @@ le "x-" peut être remplacé par  :
 
 _____
 
-## 4. Gestion de la justification du contenu**
+## 4. Gestion de la justification du contenu
 
 - content-center : Centrer le contenu
 
@@ -108,7 +108,7 @@ _____
 _____
 
 
-## 5. Gestion de l'alignement du contenu**
+## 5. Gestion de l'alignement du contenu
 
 - al-end : aligner à la fin
 
@@ -120,7 +120,7 @@ _____
 
 _____
 
-## 6. Gestion du responsive**
+## 6. Gestion du responsive
 
 - col-lg-i : Utilisé pour la version "desktop"
 
