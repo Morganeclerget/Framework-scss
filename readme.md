@@ -110,13 +110,13 @@ _____
 
 ## 5. Gestion de l'alignement du contenu
 
-- al-end : aligner à la fin
+- al-end : Aligner à la fin
 
-- al-center : aligner au centre 
+- al-center : Aligner au centre 
 
-- al-stretch : étirer sur toute la largeur/hauteur
+- al-stretch : Étirer sur toute la largeur/hauteur
 
-- al-content : aligner sur le contenu 
+- al-content : Aligner sur le contenu 
 
 _____
 
