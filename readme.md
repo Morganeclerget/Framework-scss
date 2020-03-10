@@ -25,15 +25,14 @@ _____
 
 ## 2. Gérer les margins :
 
-Le framework permet de gérer les margins jusqu'à 4 niveaux multiplicateurs différents en se basant sur une variable "$margin" :
+Le framework permet de gérer les margins en se basant sur une variable "$margin" :
 
       $margin : 20px;  // Variable modifiable directement dans le scss
-
-Ce nombre muliplicateur maximal peut également être géré dans le scss via la variable suivante : 
+      
+et d'un multiplicateur "i" qui a une valeure maximale de "4" par défaut, également modifiable dans le scss sous la variable suivante :
 
       $nbSpacing : 4;
-
-
+      
 
 **Formation de la classe à utiliser : m(x)-i**
 
@@ -45,11 +44,14 @@ le "x-" peut être remplacé par  :
 - mb-  : margin-bottom
 - ml-  : margin-left
 
+mauto  : margin-auto (centrer le contenu dans un bloc)
+
 *ex :* 
 
-      class="mt-2"  // = margin-top 
-
-mauto  : margin-auto (centrer le contenu dans un bloc)
+      class="mt-2"  // = margin-top : 20px * 2;  
+                    // = margin-top : 40px;
+                    
+*Remarques : On comprend que "i" joue bien le rôle du multiplicateur.*
 
 _____
 
@@ -57,8 +59,16 @@ _____
 
 Les paddings se gèrent de la même manière que les margins (CF "2. Gérer les margins").
 
-La variable $nbSpacing est utilisée pour les 4 niveaux de gestion différents.
+Leur gestion se fait en se basant sur une varibale "$padding" :
 
+      $padding : 20px;  // Variable modifiable dans le scss
+      
+et d'un multiplicateur "i" qui a une valeure maximale de "4" par défaut, également modifiable dans le scss sous la variable suivante :
+
+      $nbSpacing : 4;
+      
+ 
+ 
 **Formation de la classe à utiliser : p(x)-i**
 
 x-  :
@@ -69,13 +79,16 @@ x-  :
 - pb-  : padding-bottom
 - pl-  : padding-left
 
-ex : 
+*ex :* 
 
-      class="pr-3"
+      class="pr-3"  // = padding-right : 20px * 3;  
+                    // = padding-right : 60px;
+
+*Remarques : On comprend que "i" joue bien le rôle du multiplicateur.*
 
 _____
 
-**Gérer la justification du contenu**
+## 4. Gérer la justification du contenu**
 
 - content-center : Centrer le contenu
 
@@ -92,7 +105,7 @@ _____
 _____
 
 
-**Gérer l'alignement du contenu**
+## 5. Gérer l'alignement du contenu**
 
 - al-end : aligner à la fin
 
@@ -104,7 +117,7 @@ _____
 
 _____
 
-**Gérer le responsive**
+## 6. Gérer le responsive**
 
 - col-lg-i : Utilisé pour la version "desktop"
 
@@ -112,7 +125,7 @@ _____
 
 - col-sm-i : Utilisé pour la version "mobile"
 
-
+La variable "i" étant toujours 
 
 
 
