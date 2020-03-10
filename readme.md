@@ -12,15 +12,18 @@
 
 ## 1. Système de colonnes pour le placement des éléments
 
-La page est divisée en 12 colonnes : 
+La page est divisée par défaut en 12 colonnes : 
 
 On a donc une variable i qui définit le nombre de colonnes de 1 à 12 que doit prendre un élément.
 La classe associée s'écrit de cette manière : 
 
       .col-i
       
-_____
+La valeure maximale de la variable "i" est quant à elle modifible dans le scss selon la variable suivante :
 
+      $nbColumns : 12; // 12 étant la valeure conseillée
+      
+_____
 
 
 ## 2. Gestion des margins :
@@ -125,7 +128,7 @@ _____
 
 - col-sm-i : Utilisé pour la version "mobile"
 
-La variable "i" étant toujours 
+La variable "i" étant toujours la variable qui définit le nombre de colonnes de 1 à 12 que doit prendre un élément.
 
 
 
