@@ -74,7 +74,7 @@ et d'un multiplicateur "i" qui a une valeure maximale de "4" par défaut, égale
  
 **Formation de la classe à utiliser : p(x)-i**
 
-x-  :
+le "x-" peut être remplacé par  :
 
 - p-   : padding 
 - pt-  : padding-top
