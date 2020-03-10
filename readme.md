@@ -1,6 +1,6 @@
-**Bienvenue sur mon Framework !** 
+# Bienvenue sur mon Framework !
 
-*Celui-ci propose 6 types de classes différentes :*
+**Celui-ci propose 6 types de classes différentes :**
 
 1. Système de colonnes pour le placement des éléments
 2. Gestion des margins
@@ -10,7 +10,7 @@
 6. Gestion du responsive
 
 
-**1. Système de colonnes pour le placement des éléments**
+## 1. Système de colonnes pour le placement des éléments
 
 La page est divisée en 12 colonnes : 
 
@@ -23,20 +23,21 @@ _____
 
 
 
-**Gérer les margins :**
+## 2. Gérer les margins :
 
-Le framework permet de gérer les margins jusqu'à 4 niveaux différents. 
+Le framework permet de gérer les margins jusqu'à 4 niveaux multiplicateurs différents en se basant sur une variable "$margin" :
 
-Ce nombre de niveaux peut être 
+      $margin : 20px;  // Variable modifiable directement dans le scss
+
+Ce nombre muliplicateur maximal peut également être géré dans le scss via la variable suivante : 
 
       $nbSpacing : 4;
 
 
 
+**Formation de la classe à utiliser : m(x)-i**
 
-Formation : **m{x}-{1/2/3/4}**
-
-x-  :
+le "x-" peut être remplacé par  :
 
 - m-   : margin 
 - mt-  : margin-top
@@ -44,13 +45,21 @@ x-  :
 - mb-  : margin-bottom
 - ml-  : margin-left
 
+*ex :* 
+
+      class="mt-2"  // = margin-top 
+
 mauto  : margin-auto (centrer le contenu dans un bloc)
 
 _____
 
-**Gérer les paddings :**
+## 3. Gérer les paddings :
 
-Formation : **p{x}-{1/2/3/4}**
+Les paddings se gèrent de la même manière que les margins (CF "2. Gérer les margins").
+
+La variable $nbSpacing est utilisée pour les 4 niveaux de gestion différents.
+
+**Formation de la classe à utiliser : p(x)-i**
 
 x-  :
 
@@ -59,6 +68,10 @@ x-  :
 - pr-  : padding-right
 - pb-  : padding-bottom
 - pl-  : padding-left
+
+ex : 
+
+      class="pr-3"
 
 _____
 
