@@ -54,7 +54,7 @@ mauto  : margin-auto (centrer le contenu dans un bloc)
       class="mt-2"  // = margin-top : 20px * 2;  
                     // = margin-top : 40px;
                     
-*Remarques : On comprend que "i" joue bien le rôle du multiplicateur.*
+*Remarque : On comprend que "i" joue bien le rôle du multiplicateur.*
 
 _____
 
@@ -87,7 +87,7 @@ le "x-" peut être remplacé par  :
       class="pr-3"  // = padding-right : 20px * 3;  
                     // = padding-right : 60px;
 
-*Remarques : On comprend que "i" joue bien le rôle du multiplicateur.*
+*Remarque : On comprend que "i" joue bien le rôle du multiplicateur.*
 
 _____
 
