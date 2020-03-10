@@ -19,7 +19,7 @@ La classe associée s'écrit de cette manière :
 
       .col-i
       
-La valeure maximale de la variable "i" est quant à elle modifible dans le scss selon la variable suivante :
+La valeure maximale de la variable "i" est quant à elle modifiable dans le scss selon la variable suivante :
 
       $nbColumns : 12; // 12 étant la valeure conseillée
       
