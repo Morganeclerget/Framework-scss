@@ -132,5 +132,9 @@ La variable "i" étant toujours la variable qui définit le nombre de colonnes d
 
 
 
+
+
+
+
 ### Thanks for reading me ! 👍
 
